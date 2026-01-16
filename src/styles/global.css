@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vectra-green: #26a269;
+  --color-vectra-dark: #1a3d35;
+  --color-vectra-darker: #142e29;
+  --color-vectra-light: #e8f5f0;
+  --color-vectra-accent: #3db584;
+
+  --font-family-display: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-display);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-vectra-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-vectra-green);
+  border-radius: 4px;
+}
+
+/* FAQ Accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+/* Timeline connector */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 1.25rem;
+  top: 3rem;
+  bottom: -1rem;
+  width: 2px;
+  background: var(--color-vectra-green);
+}
+
+.timeline-item:last-child::before {
+  display: none;
+}

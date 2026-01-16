@@ -1,0 +1,818 @@
+---
+import '../styles/global.css'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/webp" href="/vectra-logo.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vectra AI Sales Kickoff 2026 - Barcelona, Spain. March 8-11, 2026." />
+    <title>Vectra AI SKO 2026 - Barcelona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-vectra-dark/95 backdrop-blur-sm border-b border-vectra-green/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="flex items-center">
+            <img src="/vectra-logo.webp" alt="Vectra AI" class="h-8 brightness-0 invert" />
+          </a>
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#agenda" class="px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-full transition">Agenda</a>
+            <a href="#event" class="px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-full transition">Event</a>
+            <a href="#hotel" class="px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-full transition">Hotel</a>
+            <a href="#travel" class="px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-full transition">Travel</a>
+            <a href="#faq" class="px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-white/10 rounded-full transition">FAQ</a>
+            <a href="#register" class="ml-4 px-5 py-2 text-sm font-medium text-white bg-vectra-green hover:bg-vectra-accent rounded-full transition">Register</a>
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-vectra-darker border-t border-vectra-green/20">
+        <div class="px-4 py-4 space-y-2">
+          <a href="#agenda" class="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg">Agenda</a>
+          <a href="#event" class="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg">Event</a>
+          <a href="#hotel" class="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg">Hotel</a>
+          <a href="#travel" class="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg">Travel</a>
+          <a href="#faq" class="block px-4 py-2 text-white/80 hover:text-white hover:bg-white/10 rounded-lg">FAQ</a>
+          <a href="#register" class="block px-4 py-2 text-white bg-vectra-green hover:bg-vectra-accent rounded-lg text-center font-medium">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen bg-vectra-dark flex items-center pt-16">
+      <div class="absolute inset-0 overflow-hidden">
+        <div class="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] bg-vectra-green/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-vectra-accent/10 rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="mb-8">
+              <img src="/vectra-logo.webp" alt="Vectra AI" class="h-12 brightness-0 invert mb-8" />
+              <h1 class="text-5xl md:text-7xl font-bold text-white mb-2">
+                <span class="italic text-vectra-green">SKO</span> 2026
+              </h1>
+              <p class="text-2xl md:text-3xl text-white/90 font-light mt-4">Sales Kickoff</p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-6 text-white/90 mb-10">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-vectra-green/20 flex items-center justify-center">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm text-white/60">Date</p>
+                  <p class="font-semibold">March 8-11, 2026</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-vectra-green/20 flex items-center justify-center">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-sm text-white/60">Location</p>
+                  <p class="font-semibold">Barcelona, Spain</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="#register" class="inline-flex items-center justify-center px-8 py-4 bg-vectra-green hover:bg-vectra-accent text-white font-semibold rounded-full transition transform hover:scale-105">
+                Register Now
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                </svg>
+              </a>
+              <a href="#agenda" class="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white hover:bg-white/10 font-semibold rounded-full transition">
+                View Agenda
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden lg:block">
+            <div class="relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-vectra-green/20 to-transparent rounded-3xl"></div>
+              <img
+                src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800&q=80"
+                alt="Barcelona cityscape"
+                class="rounded-3xl shadow-2xl"
+              />
+              <div class="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md rounded-2xl p-4">
+                <p class="text-white font-medium">Hotel Arts, Barcelona</p>
+                <p class="text-white/70 text-sm">Carrer de la Marina, 19-21</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-white/50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="event" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Welcome</span>
+            <h2 class="text-4xl font-bold text-gray-900 mt-2 mb-6">Welcome to Vectra AI SKO!</h2>
+            <div class="prose prose-lg text-gray-600">
+              <p>
+                The SKO Team looks forward to greeting you in Barcelona in March 2026. We're planning an exciting week of learning opportunities, which includes time to network with partners and peers.
+              </p>
+              <p>
+                Be inspired by our executive team as they celebrate our successes and guide our vision for 2026 and beyond.
+              </p>
+            </div>
+            <div class="mt-8 p-6 bg-vectra-light rounded-xl border-l-4 border-vectra-green">
+              <p class="text-gray-700 font-medium">Please review the event and travel details below before registering.</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-50 rounded-2xl p-6">
+              <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-900 mb-1">Hotel Arts</h3>
+              <p class="text-sm text-gray-600">Barcelona's premier waterfront hotel</p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6">
+              <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-900 mb-1">Invite Only</h3>
+              <p class="text-sm text-gray-600">Vectra AI management determines attendance</p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6">
+              <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-900 mb-1">12-18°C</h3>
+              <p class="text-sm text-gray-600">Expected weather in Barcelona</p>
+            </div>
+            <div class="bg-gray-50 rounded-2xl p-6">
+              <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-4">
+                <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                </svg>
+              </div>
+              <h3 class="font-semibold text-gray-900 mb-1">Business Casual</h3>
+              <p class="text-sm text-gray-600">Cocktail attire for Awards Dinner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- General Information -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Details</span>
+          <h2 class="text-4xl font-bold text-gray-900 mt-2">General Information</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Card 1 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Event Dates</h3>
+            <p class="text-gray-600">Sunday, 8th March - Wednesday, 11th March 2026</p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Venue</h3>
+            <p class="text-gray-600">Hotel Arts, Barcelona<br/>Carrer de la Marina, 19-21<br/>Ciutat Vella, 08005</p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Name Badges</h3>
+            <p class="text-gray-600">Required at all sponsored group events. Collect yours at registration.</p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Expense Policy</h3>
+            <p class="text-gray-600">Breakfast, lunch and dinner provided. Food/drink expensable only during travel.</p>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Registration Desk</h3>
+            <p class="text-gray-600">
+              <span class="font-medium">Sun:</span> 12PM - 7PM<br/>
+              <span class="font-medium">Mon-Tue:</span> 8AM - 5PM<br/>
+              <span class="font-medium">Wed:</span> 4AM - 12PM
+            </p>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition">
+            <div class="w-14 h-14 bg-vectra-green rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Weather</h3>
+            <p class="text-gray-600">12-18°C in March. Bring a light jacket or jumper for evenings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agenda Section -->
+    <section id="agenda" class="py-20 bg-vectra-dark">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Schedule</span>
+          <h2 class="text-4xl font-bold text-white mt-2">Agenda</h2>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Left side navigation -->
+          <div class="hidden lg:block">
+            <div class="sticky top-24 space-y-3">
+              {['Agenda', 'Event', 'Hotel', 'General'].map((item) => (
+                <div class="bg-vectra-darker rounded-xl p-4 border border-vectra-green/20 hover:border-vectra-green/50 transition cursor-pointer">
+                  <span class="text-white font-medium">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="space-y-0">
+            <!-- Day 1 -->
+            <div class="timeline-item relative pl-16 pb-12">
+              <div class="absolute left-0 top-0 w-10 h-10 bg-vectra-green rounded-full flex items-center justify-center text-white font-bold z-10">1</div>
+              <div class="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 class="text-xl font-bold text-white mb-1">Sunday, 8th March</h3>
+                <ul class="text-white/70 space-y-1 mt-4">
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Arrivals
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Registration
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Welcome Reception (7:00 PM)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="timeline-item relative pl-16 pb-12">
+              <div class="absolute left-0 top-0 w-10 h-10 bg-vectra-green rounded-full flex items-center justify-center text-white font-bold z-10">2</div>
+              <div class="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 class="text-xl font-bold text-white mb-1">Monday, 9th March</h3>
+                <ul class="text-white/70 space-y-1 mt-4">
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    General Session (Opening)
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Breakout Sessions
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Evening Offsite Dinner
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="timeline-item relative pl-16 pb-12">
+              <div class="absolute left-0 top-0 w-10 h-10 bg-vectra-green rounded-full flex items-center justify-center text-white font-bold z-10">3</div>
+              <div class="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 class="text-xl font-bold text-white mb-1">Tuesday, 10th March</h3>
+                <ul class="text-white/70 space-y-1 mt-4">
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    General Session
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Breakout Sessions
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Gala Awards Dinner (Cocktail Attire)
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Day 4 -->
+            <div class="timeline-item relative pl-16">
+              <div class="absolute left-0 top-0 w-10 h-10 bg-vectra-green rounded-full flex items-center justify-center text-white font-bold z-10">4</div>
+              <div class="bg-white/5 backdrop-blur rounded-xl p-6 border border-white/10">
+                <h3 class="text-xl font-bold text-white mb-1">Wednesday, 11th March</h3>
+                <ul class="text-white/70 space-y-1 mt-4">
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    General Session (Closing)
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <span class="w-1.5 h-1.5 bg-vectra-green rounded-full"></span>
+                    Departures (after 12:15 PM)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="#register" class="inline-flex items-center justify-center px-8 py-4 bg-vectra-green hover:bg-vectra-accent text-white font-semibold rounded-full transition">
+            Register Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hotel Section -->
+    <section id="hotel" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Accommodation</span>
+            <h2 class="text-4xl font-bold text-gray-900 mt-2 mb-6">Hotel Arts, Barcelona</h2>
+
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-vectra-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Check-in / Check-out</h4>
+                  <p class="text-gray-600">Check-in: 3:00 PM · Check-out: 12:00 PM</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-vectra-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Internet Access</h4>
+                  <p class="text-gray-600">Complimentary WiFi in rooms and meeting spaces</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-vectra-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Room Charges</h4>
+                  <p class="text-gray-600">Valid credit card required at check-in. You are responsible for incidentals.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-vectra-light rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Smoking Policy</h4>
+                  <p class="text-gray-600">Not permitted in guest rooms. Designated outdoor areas only.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-amber-600 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-amber-800">Cancellation Policy</h4>
+                  <p class="text-amber-700 text-sm">Failure to cancel within 4 days of arrival incurs one night's charge + tax. Contact: travel@preciseeventsintl.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80"
+              alt="Hotel Arts Barcelona"
+              class="rounded-3xl shadow-xl"
+            />
+            <a
+              href="https://www.ritzcarlton.com/en/hotels/BCNRZ-hotel-arts-barcelona/overview/"
+              target="_blank"
+              class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur rounded-xl p-4 flex items-center justify-between hover:bg-white transition"
+            >
+              <div>
+                <p class="font-semibold text-gray-900">View Hotel Website</p>
+                <p class="text-sm text-gray-600">ritzcarlton.com</p>
+              </div>
+              <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gratuity info -->
+        <div class="mt-12 grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h4 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <svg class="w-5 h-5 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              Gratuities Included
+            </h4>
+            <p class="text-gray-600 text-sm">Vectra AI has prepaid gratuities for all staff at Vectra-sponsored group functions.</p>
+          </div>
+          <div class="bg-gray-50 rounded-2xl p-6">
+            <h4 class="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+              <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              Not Included
+            </h4>
+            <p class="text-gray-600 text-sm">Maid services, bell staff, room service, restaurant servers, and bartenders at non-group meals. Pay at your discretion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Section -->
+    <section id="travel" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Getting There</span>
+          <h2 class="text-4xl font-bold text-gray-900 mt-2">Travel Information</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Book Through Navan</h3>
+            <p class="text-gray-600 text-sm">All travel must be booked through the SKO-specific Navan link (to be provided). Roundtrip air from your home city to Barcelona.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Arrival Time</h3>
+            <p class="text-gray-600 text-sm">Please arrive by <span class="font-semibold">5:00 PM on Sunday, 8th March</span>. The Welcome Reception starts at 7:00 PM.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Departure (EMEA)</h3>
+            <p class="text-gray-600 text-sm">Depart Hotel Arts anytime after <span class="font-semibold">12:15 PM on Wednesday, 11th March</span>.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Ground Transportation</h3>
+            <p class="text-gray-600 text-sm">You are responsible for airport transport. Approximate taxi cost: <span class="font-semibold">€30</span> from Barcelona Airport (expensable).</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Visa Requirements</h3>
+            <p class="text-gray-600 text-sm">Check your country's government travel website to see if a travel visa is required for Spain/EU.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl p-8 shadow-sm">
+            <div class="w-12 h-12 bg-vectra-green/10 rounded-xl flex items-center justify-center mb-6">
+              <svg class="w-6 h-6 text-vectra-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-gray-900 mb-3">Expense Policy</h3>
+            <p class="text-gray-600 text-sm">Refer to the <a href="https://vectra-ai.bravais.com/document/440/preview" class="text-vectra-green hover:underline">Corporate Travel & Expense Policy</a> for all guidelines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Questions</span>
+          <h2 class="text-4xl font-bold text-gray-900 mt-2">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ 1 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>Will Vectra AI cover my room costs?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p class="mb-4"><strong>Yes, for:</strong> Nights of March 8th, 9th, 10th (checkout March 11th)</p>
+              <p><strong>Your responsibility:</strong> Additional room nights (must be approved), hotel incidentals, and personal extensions.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>Can I expense my meals while traveling?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p class="mb-4"><strong>Yes, expense meals:</strong> While traveling to/from the event, or on non-program dates.</p>
+              <p><strong>Meals included at SKO:</strong></p>
+              <ul class="list-disc list-inside mt-2 space-y-1">
+                <li>Sunday: Welcome Reception Dinner</li>
+                <li>Monday: Breakfast, Lunch, Snacks, Dinner</li>
+                <li>Tuesday: Breakfast, Lunch, Snacks, Dinner</li>
+                <li>Wednesday: Breakfast, Lunch (TBC)</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>What should I wear?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p><strong>Daytime & evening:</strong> Business casual</p>
+              <p><strong>Awards Dinner (Tuesday):</strong> Cocktail attire highly recommended</p>
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>Do you provide transportation to/from the airport?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p>Hotel shuttles may be provided. If you can't make the shuttle schedule, book a taxi (approx. €30, expensable to Vectra AI).</p>
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>What if I have dietary restrictions?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p>Indicate your requirements in the "Special Meal Requests" section during registration. Gluten-free, vegetarian, and food allergies are accommodated. Kosher or halal needs will have special arrangements made.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>Can I bring a guest?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p class="text-amber-700 font-medium">No. Companions, spouses, and children are not included and will not be allowed to attend any part of the conference or activities.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 7 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>What is the cancellation policy?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <ul class="space-y-2">
+                <li>Submit all cancellation requests in writing to the registration team</li>
+                <li>Flight cancellations: contact Navan directly</li>
+                <li>Hotel cancellations: notify registration team (4+ days before arrival to avoid penalty)</li>
+                <li><strong>Important:</strong> Cancelling registration does NOT automatically cancel hotel/air bookings</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- FAQ 8 -->
+          <details class="group bg-gray-50 rounded-2xl">
+            <summary class="flex items-center justify-between p-6 font-semibold text-gray-900">
+              <span>Is attendance mandatory?</span>
+              <svg class="w-5 h-5 text-vectra-green chevron flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 text-gray-600">
+              <p><strong>Yes.</strong> All General Sessions, Breakout Sessions, and Evening Events are mandatory for all participants.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code of Ethics -->
+    <section class="py-20 bg-vectra-dark">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <span class="text-vectra-green font-semibold text-sm uppercase tracking-wider">Guidelines</span>
+          <h2 class="text-4xl font-bold text-white mt-2">Code of Ethics</h2>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur rounded-2xl p-8 border border-white/10">
+          <p class="text-white/80 mb-6">
+            It is the policy of Vectra AI, Inc. to conduct its affairs in strict compliance with the letter and spirit of the law and to adhere to the highest principles of business ethics.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-vectra-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="text-white/70">Avoid activities in conflict with company interests</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-vectra-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="text-white/70">Both the fact and appearance of conflict should be avoided</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-vectra-green mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <p class="text-white/70">Report uncertain situations to parties named in the Reporting Violations section</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration CTA -->
+    <section id="register" class="py-20 bg-gradient-to-br from-vectra-green to-vectra-accent">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold text-white mb-6">Ready to Register?</h2>
+        <p class="text-xl text-white/90 mb-10">
+          Please review all event and travel details above before completing your registration.
+        </p>
+
+        <div class="bg-white rounded-2xl p-8 shadow-xl max-w-md mx-auto">
+          <p class="text-gray-600 mb-6">Registration links will be sent via email to eligible attendees.</p>
+          <div class="text-sm text-gray-500">
+            <p>Questions? Contact the registration team at:</p>
+            <a href="mailto:travel@preciseeventsintl.com" class="text-vectra-green font-semibold hover:underline">travel@preciseeventsintl.com</a>
+          </div>
+        </div>
+
+        <p class="text-white/70 text-sm mt-8">
+          *Please check your confirmation email for the Navan link to book your travel.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-vectra-darker py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-6">
+            <img src="/vectra-logo.webp" alt="Vectra AI" class="h-8 brightness-0 invert" />
+            <span class="text-white/50 text-sm">© 2026 Vectra AI. All Rights Reserved.</span>
+          </div>
+
+          <div class="flex items-center gap-6">
+            <a href="#agenda" class="text-white/70 hover:text-white text-sm transition">Agenda</a>
+            <a href="#event" class="text-white/70 hover:text-white text-sm transition">Event Info</a>
+            <a href="#hotel" class="text-white/70 hover:text-white text-sm transition">Hotel Info</a>
+            <a href="#faq" class="text-white/70 hover:text-white text-sm transition">FAQ</a>
+            <a href="https://vectra-ai.bravais.com/document/440/preview" target="_blank" class="text-white/70 hover:text-white text-sm transition">Expense Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+      });
+
+      // Close mobile menu when clicking a link
+      mobileMenu?.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      // Navbar background on scroll
+      const nav = document.querySelector('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          nav?.classList.add('shadow-lg');
+        } else {
+          nav?.classList.remove('shadow-lg');
+        }
+      });
+    </script>
+  </body>
+</html>
