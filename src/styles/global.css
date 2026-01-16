@@ -129,26 +129,31 @@ input[type="checkbox"] {
 }
 
 /* Hero Masonry Grid - bleeds to right edge */
-.hero-masonry {
+.hero-masonry-bleed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0.75rem;
-  padding: 0.75rem 0 0.75rem 0.75rem;
+  padding: 1rem 0 1rem 1rem;
 }
 
-.hero-masonry .hero-img-main {
+.hero-masonry-bleed .hero-img-main {
   grid-row: span 2;
   border-radius: 1rem 0 0 1rem;
   overflow: hidden;
 }
 
-.hero-masonry .hero-img-top {
+.hero-masonry-bleed .hero-img-top {
   border-radius: 1rem 0 0 0;
   overflow: hidden;
 }
 
-.hero-masonry .hero-img-bottom {
+.hero-masonry-bleed .hero-img-bottom {
   border-radius: 0 0 0 1rem;
   overflow: hidden;
 }

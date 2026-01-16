@@ -52,54 +52,57 @@ import '../styles/global.css'
 
     <!-- Hero Section -->
     <section class="bg-vectra-dark overflow-hidden">
-      <div class="grid lg:grid-cols-[1fr_55%] min-h-[600px] lg:min-h-[700px]">
-        <!-- Left: Content -->
-        <div class="flex items-center px-6 sm:px-8 lg:px-12 xl:px-20 py-16 lg:py-24">
-          <div class="max-w-xl">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight">
-              Welcome to Vectra AI SKO!
-            </h1>
+      <div class="relative min-h-[600px] lg:min-h-[680px]">
+        <!-- Container for text content (stays within site width) -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div class="grid lg:grid-cols-2 min-h-[600px] lg:min-h-[680px] items-center">
+            <!-- Left: Content -->
+            <div class="py-16 lg:py-24 lg:pr-12">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight">
+                Welcome to Vectra AI SKO!
+              </h1>
 
-            <div class="mt-8 space-y-5 text-lg lg:text-xl text-white/80 leading-relaxed">
-              <p>
-                The SKO Team looks forward to greeting you in Barcelona in March 2026. We're planning an exciting week of learning opportunities, which includes time to network with partners and peers.
-              </p>
-              <p>
-                Be inspired by our executive team as they celebrate our successes and guide our vision for 2026 and beyond.
-              </p>
-            </div>
-
-            <div class="flex flex-wrap gap-4 mt-10">
-              <a href="#register" class="inline-flex items-center gap-2 px-8 py-4 bg-vectra-neon hover:bg-emerald-400 text-vectra-dark font-semibold text-lg rounded-full transition-all">
-                Register Now
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-              </a>
-              <a href="#info" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold text-lg rounded-full border border-white/20 transition-all">
-                Event Details
-              </a>
-            </div>
-
-            <div class="flex flex-wrap gap-6 mt-10 pt-8 border-t border-white/10">
-              <div>
-                <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Date</p>
-                <p class="text-lg font-semibold text-white mt-1">March 8–11, 2026</p>
+              <div class="mt-8 space-y-5 text-lg lg:text-xl text-white/80 leading-relaxed">
+                <p>
+                  The SKO Team looks forward to greeting you in Barcelona in March 2026. We're planning an exciting week of learning opportunities, which includes time to network with partners and peers.
+                </p>
+                <p>
+                  Be inspired by our executive team as they celebrate our successes and guide our vision for 2026 and beyond.
+                </p>
               </div>
-              <div>
-                <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Location</p>
-                <p class="text-lg font-semibold text-white mt-1">Barcelona, Spain</p>
+
+              <div class="flex flex-wrap gap-4 mt-10">
+                <a href="#register" class="inline-flex items-center gap-2 px-8 py-4 bg-vectra-neon hover:bg-emerald-400 text-vectra-dark font-semibold text-lg rounded-full transition-all">
+                  Register Now
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+                <a href="#info" class="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-semibold text-lg rounded-full border border-white/20 transition-all">
+                  Event Details
+                </a>
               </div>
-              <div>
-                <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Venue</p>
-                <p class="text-lg font-semibold text-white mt-1">Hotel Arts Barcelona</p>
+
+              <div class="flex flex-wrap gap-6 mt-10 pt-8 border-t border-white/10">
+                <div>
+                  <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Date</p>
+                  <p class="text-lg font-semibold text-white mt-1">March 8–11, 2026</p>
+                </div>
+                <div>
+                  <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Location</p>
+                  <p class="text-lg font-semibold text-white mt-1">Barcelona, Spain</p>
+                </div>
+                <div>
+                  <p class="text-xs text-vectra-neon uppercase tracking-wider font-semibold">Venue</p>
+                  <p class="text-lg font-semibold text-white mt-1">Hotel Arts Barcelona</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right: Masonry Images (bleeds to edge) -->
-        <div class="hero-masonry hidden lg:grid">
+        <!-- Right: Masonry Images (bleeds to right edge, positioned absolutely) -->
+        <div class="hero-masonry-bleed hidden lg:grid">
           <div class="hero-img-main">
             <img src="/hotel-hero.avif" alt="Hotel Arts Barcelona" class="w-full h-full object-cover" />
           </div>
@@ -110,6 +113,43 @@ import '../styles/global.css'
             <img src="/rz-bcnrz-meeting-spaces-plaza-36988_Pano-Hor.jpg" alt="Meeting spaces" class="w-full h-full object-cover" />
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Highlight Section (white) -->
+    <section class="py-12 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Notice -->
+        <div class="p-5 bg-amber-100 border-l-4 border-amber-400 rounded-r-xl mb-8">
+          <p class="text-lg text-amber-900 font-medium">
+            Please review the event and travel details below before registering.
+          </p>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="text-center p-6 bg-stone-50 rounded-2xl border border-stone-200">
+            <div class="text-3xl font-bold text-vectra-neon">4</div>
+            <p class="text-base text-stone-600 mt-1">Days of Sessions</p>
+          </div>
+          <div class="text-center p-6 bg-stone-50 rounded-2xl border border-stone-200">
+            <div class="text-3xl font-bold text-vectra-blue">12-18°C</div>
+            <p class="text-base text-stone-600 mt-1">March Weather</p>
+          </div>
+          <div class="text-center p-6 bg-stone-50 rounded-2xl border border-stone-200">
+            <div class="text-3xl font-bold text-vectra-dark">5★</div>
+            <p class="text-base text-stone-600 mt-1">Hotel Arts Barcelona</p>
+          </div>
+          <div class="text-center p-6 bg-stone-50 rounded-2xl border border-stone-200">
+            <div class="text-3xl font-bold text-rose-500">🏆</div>
+            <p class="text-base text-stone-600 mt-1">Gala Awards Dinner</p>
+          </div>
+        </div>
+
+        <!-- Navan Note -->
+        <p class="text-center text-stone-500 mt-6 text-sm">
+          *Please check your confirmation email for the Navan link to book your travel.
+        </p>
       </div>
     </section>
 
