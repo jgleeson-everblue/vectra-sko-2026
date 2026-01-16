@@ -851,6 +851,28 @@ import '../styles/global.css'
             Questions? Contact <a href="mailto:travel@preciseeventsintl.com" class="text-vectra-blue hover:underline">travel@preciseeventsintl.com</a>
           </p>
         </form>
+
+        <!-- Success State -->
+        <div id="registration-success" class="hidden bg-white rounded-2xl p-8 sm:p-12 shadow-xl text-center">
+          <div class="w-20 h-20 bg-vectra-neon/10 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-10 h-10 text-vectra-neon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-stone-900 mb-3">Registration Submitted</h3>
+          <p class="text-stone-600 mb-6 max-w-md mx-auto">
+            Thank you for registering for Vectra AI SKO 2026. You will receive a confirmation email shortly with further details.
+          </p>
+          <div class="bg-stone-50 rounded-xl p-5 mb-6 max-w-sm mx-auto">
+            <p class="text-sm text-stone-500 mb-1">Event Date</p>
+            <p class="font-semibold text-stone-900">March 8-11, 2026</p>
+            <p class="text-sm text-stone-500 mt-3 mb-1">Location</p>
+            <p class="font-semibold text-stone-900">Hotel Arts, Barcelona</p>
+          </div>
+          <p class="text-sm text-stone-500">
+            Questions? Contact <a href="mailto:travel@preciseeventsintl.com" class="text-vectra-blue hover:underline">travel@preciseeventsintl.com</a>
+          </p>
+        </div>
       </div>
     </section>
 
@@ -912,9 +934,16 @@ import '../styles/global.css'
       });
 
       // Form submission
-      document.getElementById('registration-form')?.addEventListener('submit', (e) => {
+      const registrationForm = document.getElementById('registration-form');
+      const successState = document.getElementById('registration-success');
+
+      registrationForm?.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Registration submitted! (Demo - would submit to backend in production)');
+        // Hide form, show success state
+        registrationForm.classList.add('hidden');
+        successState?.classList.remove('hidden');
+        // Scroll to top of section
+        document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' });
       });
     </script>
   </body>
