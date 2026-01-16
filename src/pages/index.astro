@@ -132,37 +132,13 @@ import '../styles/global.css'
     <!-- Highlight Section (white) -->
     <section class="py-10 lg:py-14 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Notice + Stats combined -->
-        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 lg:gap-8 p-6 lg:p-8 bg-stone-50 rounded-2xl border border-stone-200">
-          <!-- Left: Notice -->
-          <div class="lg:max-w-md">
-            <p class="text-lg lg:text-xl font-semibold text-stone-800">
-              📋 Please review the event and travel details below before registering.
-            </p>
-            <p class="text-sm text-stone-500 mt-2">
-              *Check your confirmation email for the Navan link to book travel.
-            </p>
-          </div>
-
-          <!-- Right: Quick Stats (inline) -->
-          <div class="flex flex-wrap gap-6 lg:gap-8">
-            <div class="text-center">
-              <div class="text-2xl lg:text-3xl font-bold text-vectra-neon">4 Days</div>
-              <p class="text-xs text-stone-500 mt-0.5">of Sessions</p>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl lg:text-3xl font-bold text-vectra-blue">12-18°C</div>
-              <p class="text-xs text-stone-500 mt-0.5">March Weather</p>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl lg:text-3xl font-bold text-vectra-dark">5★</div>
-              <p class="text-xs text-stone-500 mt-0.5">Hotel Arts</p>
-            </div>
-            <div class="text-center">
-              <div class="text-2xl lg:text-3xl">🏆</div>
-              <p class="text-xs text-stone-500 mt-0.5">Gala Dinner</p>
-            </div>
-          </div>
+        <div class="p-6 lg:p-8 bg-amber-50 border border-amber-200 rounded-2xl">
+          <p class="text-lg lg:text-xl font-semibold text-amber-900">
+            Please review the event and travel details below before registering.
+          </p>
+          <p class="text-base text-amber-800 mt-3">
+            After registering, check your confirmation email for the Navan link to book your travel.
+          </p>
         </div>
       </div>
     </section>
@@ -192,22 +168,22 @@ import '../styles/global.css'
                 <div class="flex gap-4">
                   <div class="flex-shrink-0 w-12 h-12 bg-vectra-neon rounded-full flex items-center justify-center text-vectra-dark font-bold text-lg">1</div>
                   <div class="flex-1 bg-white rounded-xl p-5 border border-stone-200">
-                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                      <span class="text-sm font-semibold text-vectra-neon uppercase tracking-wider">Sunday</span>
+                    <div class="mb-3">
+                      <span class="text-sm font-semibold text-vectra-neon uppercase tracking-wider block">Sunday</span>
                       <span class="text-xl font-bold text-stone-900">March 8th</span>
                     </div>
                     <ul class="space-y-2 text-base">
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-neon rounded-full"></span>
+                        <span class="w-2 h-2 bg-vectra-neon rounded-full flex-shrink-0"></span>
                         Arrivals
                       </li>
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-neon rounded-full"></span>
-                        Registration <span class="text-stone-400">(12:00 PM – 7:00 PM)</span>
+                        <span class="w-2 h-2 bg-vectra-neon rounded-full flex-shrink-0"></span>
+                        <span>Registration <span class="text-stone-400">(12:00 PM – 7:00 PM)</span></span>
                       </li>
                       <li class="flex items-center gap-3 text-stone-900 font-medium">
-                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
-                        Welcome Reception <span class="text-stone-500 font-normal">7:00 PM</span>
+                        <span class="w-2 h-2 bg-amber-500 rounded-full flex-shrink-0"></span>
+                        <span>Welcome Reception <span class="text-stone-500 font-normal">7:00 PM</span></span>
                       </li>
                     </ul>
                   </div>
@@ -217,21 +193,21 @@ import '../styles/global.css'
                 <div class="flex gap-4">
                   <div class="flex-shrink-0 w-12 h-12 bg-vectra-blue rounded-full flex items-center justify-center text-white font-bold text-lg">2</div>
                   <div class="flex-1 bg-white rounded-xl p-5 border border-stone-200">
-                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                      <span class="text-sm font-semibold text-vectra-blue uppercase tracking-wider">Monday</span>
+                    <div class="mb-3">
+                      <span class="text-sm font-semibold text-vectra-blue uppercase tracking-wider block">Monday</span>
                       <span class="text-xl font-bold text-stone-900">March 9th</span>
                     </div>
                     <ul class="space-y-2 text-base">
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-blue rounded-full"></span>
-                        General Session <span class="text-stone-400">(Opening)</span>
+                        <span class="w-2 h-2 bg-vectra-blue rounded-full flex-shrink-0"></span>
+                        <span>General Session <span class="text-stone-400">(Opening)</span></span>
                       </li>
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-blue rounded-full"></span>
+                        <span class="w-2 h-2 bg-vectra-blue rounded-full flex-shrink-0"></span>
                         Breakout Sessions
                       </li>
                       <li class="flex items-center gap-3 text-stone-900 font-medium">
-                        <span class="w-2 h-2 bg-amber-500 rounded-full"></span>
+                        <span class="w-2 h-2 bg-amber-500 rounded-full flex-shrink-0"></span>
                         Evening Dinner Event
                       </li>
                     </ul>
@@ -242,22 +218,22 @@ import '../styles/global.css'
                 <div class="flex gap-4">
                   <div class="flex-shrink-0 w-12 h-12 bg-vectra-blue rounded-full flex items-center justify-center text-white font-bold text-lg">3</div>
                   <div class="flex-1 bg-white rounded-xl p-5 border border-stone-200">
-                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                      <span class="text-sm font-semibold text-vectra-blue uppercase tracking-wider">Tuesday</span>
+                    <div class="mb-3">
+                      <span class="text-sm font-semibold text-vectra-blue uppercase tracking-wider block">Tuesday</span>
                       <span class="text-xl font-bold text-stone-900">March 10th</span>
                     </div>
                     <ul class="space-y-2 text-base">
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-blue rounded-full"></span>
+                        <span class="w-2 h-2 bg-vectra-blue rounded-full flex-shrink-0"></span>
                         General Session
                       </li>
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-blue rounded-full"></span>
+                        <span class="w-2 h-2 bg-vectra-blue rounded-full flex-shrink-0"></span>
                         Breakout Sessions
                       </li>
                       <li class="flex items-center gap-3 text-stone-900 font-medium">
-                        <span class="w-2 h-2 bg-rose-500 rounded-full"></span>
-                        🏆 Gala Awards Dinner <span class="text-stone-500 font-normal">Cocktail Attire</span>
+                        <span class="w-2 h-2 bg-rose-500 rounded-full flex-shrink-0"></span>
+                        <span>Gala Awards Dinner <span class="text-stone-500 font-normal">– Cocktail Attire</span></span>
                       </li>
                     </ul>
                   </div>
@@ -267,27 +243,27 @@ import '../styles/global.css'
                 <div class="flex gap-4">
                   <div class="flex-shrink-0 w-12 h-12 bg-vectra-dark rounded-full flex items-center justify-center text-white font-bold text-lg">4</div>
                   <div class="flex-1 bg-white rounded-xl p-5 border border-stone-200">
-                    <div class="flex flex-wrap items-center gap-3 mb-3">
-                      <span class="text-sm font-semibold text-vectra-dark uppercase tracking-wider">Wednesday</span>
+                    <div class="mb-3">
+                      <span class="text-sm font-semibold text-vectra-dark uppercase tracking-wider block">Wednesday</span>
                       <span class="text-xl font-bold text-stone-900">March 11th</span>
                     </div>
                     <ul class="space-y-2 text-base">
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-vectra-dark rounded-full"></span>
-                        General Session <span class="text-stone-400">(Closing)</span>
+                        <span class="w-2 h-2 bg-vectra-dark rounded-full flex-shrink-0"></span>
+                        <span>General Session <span class="text-stone-400">(Closing)</span></span>
                       </li>
                       <li class="flex items-center gap-3 text-stone-600">
-                        <span class="w-2 h-2 bg-stone-400 rounded-full"></span>
-                        Departures <span class="text-stone-400">after 12:15 PM</span>
+                        <span class="w-2 h-2 bg-stone-400 rounded-full flex-shrink-0"></span>
+                        <span>Departures <span class="text-stone-400">after 12:15 PM</span></span>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              <div class="mt-6 p-4 bg-vectra-neon/10 rounded-xl border border-vectra-neon/30">
-                <p class="text-base text-vectra-dark font-medium text-center">
-                  ⚠️ Attendance is <strong>mandatory</strong> for all General Sessions, Breakout Sessions, and Evening Events.
+              <div class="mt-6 p-4 bg-amber-50 rounded-xl border border-amber-200">
+                <p class="text-base text-amber-900 font-medium text-center">
+                  Attendance is <strong>mandatory</strong> for all General Sessions, Breakout Sessions, and Evening Events.
                 </p>
               </div>
             </div>
