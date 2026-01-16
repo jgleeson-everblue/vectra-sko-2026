@@ -6,9 +6,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "start": "serve dist -l 3000",
     "astro": "astro"
   },
   "dependencies": {
+    "serve": "^14.2.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.10",
     "tailwindcss": "^4.1.18"
