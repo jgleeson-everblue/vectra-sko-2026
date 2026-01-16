@@ -57,7 +57,7 @@ input[type="checkbox"] {
 
 /* Tab buttons */
 .info-tab {
-  @apply w-full px-6 py-4 text-left font-medium rounded-full border-2 transition-all;
+  @apply w-full px-6 py-4 text-center font-medium rounded-full border-2 transition-all;
   @apply bg-white border-stone-200 text-stone-700 hover:border-stone-300;
 }
 
